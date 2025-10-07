@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>davvat - Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .bg-davvat-navy {
+      background-color: #1a2847;
+    }
+    
+    .text-davvat-navy {
+      color: #1a2847;
+    }
+    
+    .text-davvat-gold {
+      color: #c9a055;
+    }
+    
+    .bg-davvat-gold {
+      background-color: #c9a055;
+    }
+    
+    .border-davvat-gold {
+      border-color: #c9a055;
+    }
+    
+    .gradient-overlay {
+      background: linear-gradient(135deg, rgba(26, 40, 71, 0.95) 0%, rgba(26, 40, 71, 0.85) 100%);
+    }
+    
+    .ornament {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0 10 Q 25 0, 50 10 T 100 10" stroke="%23c9a055" fill="none" stroke-width="0.5"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body class="h-full bg-white">
+  <!-- Header -->
+  <header class="absolute top-0 left-0 right-0 z-50 px-6 py-6 md:px-12">
+    <nav class="flex items-center justify-between max-w-7xl mx-auto">
+      <div class="flex items-center space-x-2">
+        <img src="davvat.png" alt="davvat Logo" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="display:none;" class="text-2xl md:text-3xl font-serif font-bold text-davvat-navy">
+          DA<span class="text-davvat-gold">V</span>VAT
+        </div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-davvat-navy">
+        <a href="#" class="hover:text-davvat-gold transition">Home</a>
+        <a href="#about" class="hover:text-davvat-gold transition">About</a>
+        <a href="#contact" class="hover:text-davvat-gold transition">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative min-h-screen flex items-center justify-center px-6 py-20">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920" alt="Background" class="w-full h-full object-cover opacity-10">
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <!-- Logo -->
+      <div class="mb-8 flex justify-center">
+        <img src="davvat.png" alt="davvat" class="h-24 md:h-32 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div style="display:none;" class="flex items-center justify-center">
+          <span class="text-5xl md:text-7xl font-serif font-bold text-davvat-navy">
+            DA<span class="text-davvat-gold">V</span>VAT
+          </span>
+        </div>
+      </div>
+
+      <!-- Ornamental Divider -->
+      <div class="ornament h-4 mb-4"></div>
+
+      <!-- Large clickable link to external site (replaces Coming Soon) -->
+      <h1 class="mb-6">
+        <a href="https://genuinenutrition.com/" target="_blank" rel="noopener noreferrer" class="inline-block w-full md:w-auto px-6 py-6 md:px-12 md:py-8 bg-davvat-gold text-davvat-navy rounded-lg shadow-lg text-3xl md:text-5xl font-serif font-bold text-center hover:opacity-90 transition">
+          Visit genuinenutrition.com
+        </a>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+        We're crafting something special for you. Experience the finest selection of premium foods and authentic flavors that celebrate tradition and quality.
+      </p>
+
+      <!-- Product Images Preview -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto">
+        <div class="aspect-square rounded-lg overflow-hidden shadow-lg border-2 border-davvat-gold">
+          <img src="img1.jpeg" alt="Product 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+        <div class="aspect-square rounded-lg overflow-hidden shadow-lg border-2 border-davvat-gold">
+          <img src="img2.jpeg" alt="Product 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+        <div class="aspect-square rounded-lg overflow-hidden shadow-lg border-2 border-davvat-gold">
+          <img src="img3.jpeg" alt="Product 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+        </div>
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative bg-davvat-navy text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-serif font-semibold mb-4 text-davvat-gold">About davvat</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Bringing you the finest selection of premium foods that celebrate authentic flavors and traditional quality.
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-serif font-semibold mb-4 text-davvat-gold">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="text-gray-300 hover:text-davvat-gold transition">Home</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-davvat-gold transition">Products</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-davvat-gold transition">About Us</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-davvat-gold transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <!-- <div>
+          <h4 class="text-xl font-serif font-semibold mb-4 text-davvat-gold">Contact Us</h4>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li>Email: info@davvat.com</li>
+            <li>Phone: +91 80532 10008</li>
+            <li>Location: Delhi, India</li>
+          </ul>
+        </div> -->
+      </div>
+      
+      <!-- Copyright -->
+      <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+        <p>&copy; 2025 davvat. All rights reserved. | Crafted with excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Email form submission (only attach if a form exists)
+    (function() {
+      const notifyForm = document.querySelector('form');
+      if (!notifyForm) return;
+      notifyForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const emailInput = this.querySelector('input[type="email"]');
+        const email = emailInput ? emailInput.value : '';
+        alert('Thank you! We\'ll notify you at ' + email + ' when we launch.');
+        this.reset();
+      });
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
